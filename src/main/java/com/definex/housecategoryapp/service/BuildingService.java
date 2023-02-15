@@ -1,10 +1,10 @@
-package com.definex.service;
+package com.definex.housecategoryapp.service;
 
 
-import com.definex.model.Building;
-import com.definex.model.House;
-import com.definex.model.SummerVilla;
-import com.definex.model.Villa;
+import com.definex.housecategoryapp.model.Building;
+import com.definex.housecategoryapp.model.House;
+import com.definex.housecategoryapp.model.SummerVilla;
+import com.definex.housecategoryapp.model.Villa;
 import lombok.*;
 
 import java.util.List;

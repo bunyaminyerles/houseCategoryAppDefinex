@@ -1,14 +1,13 @@
 package com.definex.housecategoryapp;
 
-import com.definex.model.Building;
-import com.definex.model.House;
-import com.definex.model.SummerVilla;
-import com.definex.model.Villa;
-import com.definex.service.BuildingService;
+import com.definex.housecategoryapp.model.Building;
+import com.definex.housecategoryapp.model.House;
+import com.definex.housecategoryapp.model.SummerVilla;
+import com.definex.housecategoryapp.model.Villa;
+import com.definex.housecategoryapp.service.BuildingService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication

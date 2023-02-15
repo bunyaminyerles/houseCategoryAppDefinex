@@ -1,4 +1,4 @@
-package com.definex.model;
+package com.definex.housecategoryapp.model;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
