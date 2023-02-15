@@ -24,7 +24,7 @@ public class HouseCategoryAppApplication {
                 Villa.builder().price(10000000D).squareMeter(250D).numberOfRoom(7).numberOfLivingRoom(2).build(),
                 Villa.builder().price(15000000D).squareMeter(280D).numberOfRoom(8).numberOfLivingRoom(2).build(),
                 SummerVilla.builder().price(45000000D).squareMeter(300D).numberOfRoom(5).numberOfLivingRoom(4).build(),
-                SummerVilla.builder().price(55000000D).squareMeter(400D).numberOfRoom(6).numberOfLivingRoom(3).build(),
+                SummerVilla.builder().price(55000000D).squareMeter(400D).numberOfRoom(6).numberOfLivingRoom(2).build(),
                 SummerVilla.builder().price(85000000D).squareMeter(500D).numberOfRoom(9).numberOfLivingRoom(2).build()
         );
         BuildingService buildingService = new BuildingService();
@@ -37,8 +37,6 @@ public class HouseCategoryAppApplication {
         System.out.printf("Average Villa  Square Meter is : %,.01f%n", buildingService.averageSquareMeterVilla());   // 1,234,567,890.1234560000
         System.out.printf("Average Summer Villa  Square Meter is : %,.01f%n", buildingService.averageSquareMeterSummerVilla());   // 1,234,567,890.1234560000
         System.out.printf("Average Building Price Square Meter : %,.01f%n", buildingService.averageSquareMeterBuilding());   // 1,234,567,890.1234560000
+        System.out.printf("The House with livingRoom: %d, room: %d, are listed below  %n %s", 6,2,buildingService.filterBuilding(6,2).stream().map(Building::toString).toList());   // 1,234,567,890.1234560000
     }
-
-
-
 }

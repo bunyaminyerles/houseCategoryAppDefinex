@@ -13,4 +13,14 @@ public class Building {
     private Integer numberOfLivingRoom;
     private Double squareMeter;
     private Double price;
+
+    @Override
+    public String toString() {
+        return "Building {" +
+                "numberOfRoom=" + numberOfRoom +
+                ", numberOfLivingRoom=" + numberOfLivingRoom +
+                ", squareMeter=" + squareMeter +
+                ", price=" + String.format("%,.01f",price) +
+                '}';
+    }
 }

@@ -5,11 +5,7 @@ import com.definex.model.Building;
 import com.definex.model.House;
 import com.definex.model.SummerVilla;
 import com.definex.model.Villa;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.springframework.stereotype.Service;
+import lombok.*;
 
 import java.util.List;
 @Getter
@@ -54,6 +50,7 @@ public class BuildingService {
     }
 
     public List<Building> filterBuilding(Integer numberOfRoom, Integer numberOfLivingRoom) {
-        return null;
+        return buildingList.stream().filter(building -> building.getNumberOfLivingRoom().equals(numberOfLivingRoom) && building.getNumberOfRoom().equals(numberOfRoom)).toList();
     }
+
 }
