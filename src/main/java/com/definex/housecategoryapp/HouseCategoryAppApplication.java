@@ -33,6 +33,10 @@ public class HouseCategoryAppApplication {
         System.out.printf("Total Villa Price is : %,.01f%n", buildingService.totalVillaPrice());   // 1,234,567,890.1234560000
         System.out.printf("Total Summer Villa Price is : %,.01f%n", buildingService.totalSummerVillaPrice());   // 1,234,567,890.1234560000
         System.out.printf("Total Building Price is : %,.01f%n", buildingService.totalBuildingPrice());   // 1,234,567,890.1234560000
+        System.out.printf("Average House Square Meter is : %,.01f%n", buildingService.averageSquareMeterHouse());   // 1,234,567,890.1234560000
+        System.out.printf("Average Villa  Square Meter is : %,.01f%n", buildingService.averageSquareMeterVilla());   // 1,234,567,890.1234560000
+        System.out.printf("Average Summer Villa  Square Meter is : %,.01f%n", buildingService.averageSquareMeterSummerVilla());   // 1,234,567,890.1234560000
+        System.out.printf("Average Building Price Square Meter : %,.01f%n", buildingService.averageSquareMeterBuilding());   // 1,234,567,890.1234560000
     }
 
 

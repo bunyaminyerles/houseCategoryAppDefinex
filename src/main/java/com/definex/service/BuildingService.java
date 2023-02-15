@@ -36,21 +36,21 @@ public class BuildingService {
         return buildingList.stream().mapToDouble(Building::getPrice).sum();
     }
 
-    public Double totalSquareMeterHouse() {
-        return null;
+    public Double averageSquareMeterHouse() {
+        return buildingList.stream().filter(building -> building instanceof House).mapToDouble(Building::getSquareMeter).average().getAsDouble();
     }
 
-    public Double totalSquareMeterVilla() {
-        return null;
+    public Double averageSquareMeterVilla() {
+        return buildingList.stream().filter(building -> building instanceof Villa).mapToDouble(Building::getSquareMeter).average().getAsDouble();
     }
 
 
-    public Double totalSquareMeterSummerVilla() {
-        return null;
+    public Double averageSquareMeterSummerVilla() {
+        return buildingList.stream().filter(building -> building instanceof SummerVilla).mapToDouble(Building::getSquareMeter).average().getAsDouble();
     }
 
-    public Double totalSquareMeterBuilding() {
-        return null;
+    public Double averageSquareMeterBuilding() {
+        return buildingList.stream().mapToDouble(Building::getSquareMeter).average().getAsDouble();
     }
 
     public List<Building> filterBuilding(Integer numberOfRoom, Integer numberOfLivingRoom) {
